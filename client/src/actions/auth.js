@@ -7,7 +7,8 @@ import {
     AUTH_ERROR,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
-    LOGOUT
+    LOGOUT,
+    CLEAR_PROFILE
 } from '../actions/types';
 
 import setAuthToken from '../utils/setAuthToken'
@@ -90,7 +91,7 @@ export const login = ( email, password) => async dispatch => {
         });
     
         dispatch(loadUser());
-        
+
     } catch (err) {
     const errors = err.response.data.errors;
     
@@ -107,5 +108,6 @@ export const login = ( email, password) => async dispatch => {
 
     // Logout/ CLear Profile
     export const logout = () => dispatch => {
+        dispatch({type:CLEAR_PROFILE});
         dispatch({type:LOGOUT});
     }
