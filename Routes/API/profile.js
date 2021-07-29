@@ -9,7 +9,7 @@ const config = require('config');
 const Post = require('../../models/Post');
 
 
-
+//trying to get rid of typescript
 // @route GET api/profile/me
 // @ Get current users profile
 // @access Private
@@ -123,7 +123,7 @@ try {
 // @access Public
 router.get('/user/:user_id', async(req,res) =>{
     try {
-        const profile = await Profile.findOne({user: req.params.user_id}).populate('user', ['user','name', 'avatar']);
+        const profile = await Profile.findOne({user: req.params.user_id}).populate('user', ['name', 'avatar']);
 
         if(!profile) return res.status(400).json({msg: 'Profile not found'});
 

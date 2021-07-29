@@ -9,6 +9,8 @@ import CreateProfile from '../profile-forms/CreateProfile';
 import EditProfile from '../profile-forms/EditProfile';
 import AddExperience from '../profile-forms/AddExperience';
 import AddEducation from '../profile-forms/AddEducation';
+import Profiles from '../profiles/Profiles';
+import Profile from '../profile/Profile'
 
 
 
@@ -20,6 +22,8 @@ const Routes = props => {
         <Switch>
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/Profiles" component={Profiles} />
+            <Route exact path="/Profile/:id" component={Profile} />
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <PrivateRoute exact path="/CreateProfile" component={CreateProfile} />
             <PrivateRoute exact path="/Edit-Profile" component={EditProfile} />
