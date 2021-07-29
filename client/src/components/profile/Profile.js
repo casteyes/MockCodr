@@ -66,9 +66,9 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
               )}
             </div>
              
-             {/*{profile.githubusername && (
+             {profile.githubusername && (
               <ProfileGithub username={profile.githubusername} />
-             )}*/}
+             )}
 
           </div>
         </Fragment>
@@ -83,7 +83,7 @@ Profile.propTypes = {
   auth: PropTypes.object.isRequired
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   profile: state.profile,
   auth: state.auth
 });

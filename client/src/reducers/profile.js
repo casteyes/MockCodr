@@ -47,7 +47,7 @@ switch(type){
         };
         case GET_REPOS:
             return {
-                ...CLEAR_PROFILE,
+                ...state,
                 repos: payload,
                 loading: false
             }
