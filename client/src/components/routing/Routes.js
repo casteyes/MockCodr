@@ -10,7 +10,8 @@ import EditProfile from '../profile-forms/EditProfile';
 import AddExperience from '../profile-forms/AddExperience';
 import AddEducation from '../profile-forms/AddEducation';
 import Profiles from '../profiles/Profiles';
-import Profile from '../profile/Profile'
+import Profile from '../profile/Profile';
+import Posts from '../posts/Posts'
 
 
 
@@ -29,6 +30,7 @@ const Routes = props => {
             <PrivateRoute exact path="/Edit-Profile" component={EditProfile} />
             <PrivateRoute exact path="/Add-Experience" component={AddExperience} />
             <PrivateRoute exact path="/Add-Education" component={AddEducation} />
+            <PrivateRoute exact path="/Posts" component={Posts} />
         </Switch>
       </section>
     );
