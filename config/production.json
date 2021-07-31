@@ -1,0 +1,8 @@
+{
+    "mongoURI": "mongodb+srv://DanielCollins:Pikachu6969@mockcodr.9m6xz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "secretToken",
+    "githubClientId": "35b0a468714d5f928898",
+    "githubSecret":"971967b5e4edeb530229f176d4536f66bcf3f5bc ",
+    "githubToken":"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 "
+
+}
